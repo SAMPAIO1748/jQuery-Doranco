@@ -153,6 +153,13 @@
                 $("#info").text("Je relache le clic sur la zone 5");
             })
 
+            // -------------------------------------------- EVENEMENT MOUSEDOWN https://api.jquery.com/mousedown/
+            // Lorsque nous allons enfoncez le bouton du clic sur la zone 6 nous changerons le background en violet
+            $(".zone6").on('mousedown', function(){
+                $(this).css("background", "Indigo");
+                $('#info').text("Je pousse le bouton du click gauche sur la zone 6");
+            })
+
         })
 
 
