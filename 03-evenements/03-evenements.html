@@ -197,6 +197,13 @@
                 $("#info").text("Je blur sur la zone 10");
             })
 
+            // ------------------------------------------ EVENEMENT CHANGE https://api.jquery.com/change/
+            // Lorsque nous allons changer l'option de la zone 11 nous changerons le background en or.
+            $(".zone11").change(function(){
+                $(this).css('background', "Gold");
+                $("#info").text("Je change l'option dans le select de la zone 11");
+            })
+
         })
 
 
