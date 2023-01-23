@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenements</title>
+</head>
+<body>
+
+    <div id="info">je ne fais rien...</div>
+
+    <br><br>
+
+    <fieldset>
+        <p class="titre">1 / MOUSEOVER - SURVOLER LA ZONE 1</p>
+        <div class="zone1">zone1</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">2 / MOUSEMOVE - BOUGER SUR LA ZONE 2</p>
+        <div class="zone2">zone2</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">3 / MOUSEOUT - QUITTER LE SURVOL DE LA ZONE APRES AVOIR SURVOLER LA ZONE 3</p>
+        <div class="zone3">zone3</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">4 / MOUSEENTER + MOUSELEAVE - ENTRER ET SORTIR DE LA ZONE 4</p>
+        <div class="zone4">zone4</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">5 / MOUSEUP - PRESSEZ PENDANT QUELQUES SECONDES LE CLIC GAUCHE SUR LA ZONE 5 PUIS LE RELACHER SUR LA ZONE 5</p>
+        <div class="zone5">zone5</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">6 / MOUSEDOWN - ENFONCEZ LE CLIC SUR LA ZONE 6</p>
+        <div class="zone6">zone6</div>
+    </fieldset>
+    
+    <fieldset>
+        <p class="titre">7 / CLICK - CLIQUER SUR LA ZONE 7</p>
+        <div class="zone7">zone7</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">8 / DBCLICK - DOUBLECLIQUER SUR LA ZONE 8</p>
+        <div class="zone8">zone8</div>
+    </fieldset>
+
+    <fieldset>
+        <p class="titre">9 / CONTEXTMENU - CLIC DROIT SUR LA ZONE 9</p>
+        <div class="zone9">zone9</div>
+    </fieldset>
+
+    <form method="post">
+
+        <fieldset>
+            <p class="titre">10 / BLUR - CLIQUER AILLEURS APRES AVOIR CLIQUER SUR CET ELEMENT (zone 10)</p>
+            <input type="text" name="prenom" placeholder="prenom - zone 10" class="zone10">
+        </fieldset>
+
+        <fieldset>
+            <p class="titre">11 / CHANGE - SELECTIONNER UNE AUTRE OPTION (zone 11)</p>
+            <select name="pays" class="zone11">
+                <option disabled selected>zone 11 (change) Choisir une option</option>
+                <option>France</option>
+                <option>Italie</option>
+                <option>Espagne</option>
+            </select>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <p class="titre">12 / KEYDOWN+KEYUP - APPUYER ET RELACHER UNE TOUCHE DU CLAVIER (zone 12)</p>
+            <textarea name="commentaire" class="zone12" cols="30" rows="10" placeholder="Commentaire"></textarea>
+        </fieldset>
+
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script></script>
+</body>
+</html>
