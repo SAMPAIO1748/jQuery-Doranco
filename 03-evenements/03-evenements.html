@@ -118,9 +118,17 @@
             // -------------------------------- EVENEMENT MOUSEMOVE https://api.jquery.com/mousemove/
             // Lorsque nous allons bouger sur la zone 2, nous changerons leur contenu ave cla position de notre curseur dans la zone
             $(".zone2").on("mousemove", function(event){
-                    console.log(event);
+                    console.log(event); // event est un objet donc on peut inspecter ses propriétés et ses méthodes
                     $(this).text("pageX : " + event.pageX + ", pageY : " + event.pageY);
+                    // pageX et pageY sont des propriétés de event
                     $("#info").text("Je suis sur la zone 2");
+            })
+
+            // ------------------------------ EVENEMENT MOUSEOUT https://api.jquery.com/mouseout/
+            // Lorsque nous allons quitter la zone 3 après l'avoir survoler nous changerons le background en rouge.
+            $(".zone3").mouseout(function(){
+                $(this).css("background", "tomato");
+                $("#info").text("Je suis dans la zone3");
             })
         })
 
