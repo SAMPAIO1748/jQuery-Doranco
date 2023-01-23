@@ -54,7 +54,27 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
+        // -------------------- COMMENT SELECTIONNER DES ELEMENTS DE LA PAGE WEB (DOM) PUR EFFECTUER DES TRAITEMENTS ? ---------- //
+        /*
+            Afin de pouvoir manipuler des balises et éléments HTML, nous utilisions des sélecteurs jQuery.
+        */
 
+    $(document).ready(function(){
+        console.log("jQuery est chargé");
+
+        // --------------- SELECTION DES BALISES HTML
+        // $ permet d'attraper un élément
+            let maBalise = $("span"); // je selectionne l'élément span et je la garde en mémoire dans la variable maBalise
+            console.log('maBalise : ' + maBalise); // j'affiche l'élément dans la console.
+            maBalise.css('color', 'purple'); // je change la propriété color de maBalise.
+
+            $('td').css("background", "brown"); // je selectionne tous les éléments qui ont la balise td et j'applique une nouvelle couleur
+
+            $('td:eq( 2 )').css('background', "red");
+            // je selectionne l'élément td qui a l'index 2 dans le tableau regroupant tout les td du fichier html
+            // et je lui applique un background rouge.
+
+    })
     </script>
 </body>
 </html>
