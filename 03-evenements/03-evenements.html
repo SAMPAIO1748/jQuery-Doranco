@@ -142,6 +142,17 @@
                 $(this).css("background", "ForestGreen");
                 $("#info").text("Je sors de la zone 4");
             })
+
+            // -------------------------------------------- EVENEMENT CONCERNANT LE CLIC ---------------------------- //
+
+            // -------------------------------------------- EVENEMENT MOUSEUP https://api.jquery.com/mouseup/
+            // Lorsque nous allons pressez pendant quelques secondes le clic gauche et le relacher sur la zone 5 
+            // nous allons changer le background en jaune.
+            $(".zone5").on("mouseup", function(){
+                $(this).css('background', "YellowGreen");
+                $("#info").text("Je relache le clic sur la zone 5");
+            })
+
         })
 
 
