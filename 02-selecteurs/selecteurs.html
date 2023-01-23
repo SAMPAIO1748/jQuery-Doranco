@@ -80,7 +80,13 @@
             console.log('monId : ' + monId); // j'affiche l'élément dans la console.
             monId.css('color', 'tomato'); // je change la couleur du texte de l'élément.
 
+        // ----------------- SELECTION VIA LES CLASSES
 
+            let maClasse = $(".voiture"); // je séléctionne les éléments qui ont la classe voiture.
+            console.log('maClasse : ' + maClasse); // j'affiche l'élément dans la console.
+            maClasse.css('color', "blue"); // je change la couleur du texte des éléments sélectionnés.
+            $(".avion:first").css("color", 'green'); // je change la couleur du texte du premier élément qui a la classe avion.
+        
     })
     </script>
 </body>
