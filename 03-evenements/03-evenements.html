@@ -130,6 +130,18 @@
                 $(this).css("background", "tomato");
                 $("#info").text("Je suis dans la zone3");
             })
+
+            // ------------------------------ EVENEMENT MOUSEENTER + MOUSELEAVE https://api.jquery.com/mouseenter/ https://api.jquery.com/mouseleave/
+            // Lorsque que nous allons entrer et sortir de la zone 4 nous changerons le background en orange et vert.
+            $('.zone4').on("mouseenter", function(){
+                $(this).css("background", "DarkOrange");
+                $("#info").text("Je rentre dans la zone 4");
+            })
+
+            $(".zone4").on("mouseleave", function(){
+                $(this).css("background", "ForestGreen");
+                $("#info").text("Je sors de la zone 4");
+            })
         })
 
 
