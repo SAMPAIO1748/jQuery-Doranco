@@ -86,6 +86,11 @@
             console.log('maClasse : ' + maClasse); // j'affiche l'élément dans la console.
             maClasse.css('color', "blue"); // je change la couleur du texte des éléments sélectionnés.
             $(".avion:first").css("color", 'green'); // je change la couleur du texte du premier élément qui a la classe avion.
+
+        // ---------------- SELECTION MULTIPLE
+            let mesElements = $("h1, article, #resultat"); // je sélectionne plusiqurs éléments différents en même temps.
+            console.log('mesElements : ' + mesElements); // j'affiche le résultat dans la console.
+            mesElements.css('color', 'orange'); // je change la couleur du texte des éléments sélectionnés.
         
     })
     </script>
