@@ -19,4 +19,26 @@ $(document).ready(function () {
         margin-top: 10px;
         color : 'navy';
   */
+
+  let mesDivs = $(".mesDivs");
+  mesDivs.css("padding", "20px");
+  mesDivs.css({ backgroundColor: "red", marginTop: "10px", color: "navy" });
+
+  // exercice : sélectionner les p et appliquer le css suivant :
+  /*
+    font-family : 'calibri',
+    font-size : "21px",
+    color : "orange",
+    background : lightblue,
+    padding : "10px"
+
+*/
+
+  let mesP = $("p");
+  mesP.css({
+    fontFamily: "calibri",
+    fontSize: "21px",
+    "background-color": "lightblue",
+    padding: "10px",
+  });
 });
