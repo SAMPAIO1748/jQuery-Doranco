@@ -91,6 +91,22 @@
             let mesElements = $("h1, article, #resultat"); // je sélectionne plusiqurs éléments différents en même temps.
             console.log('mesElements : ' + mesElements); // j'affiche le résultat dans la console.
             mesElements.css('color', 'orange'); // je change la couleur du texte des éléments sélectionnés.
+
+        // ---------------- RESUME DES PRINCIPAUX SELECTEURS
+            /*
+            
+                selection de balise : $('balise')
+                selction d'un id : $('#id')
+                selection d'une class : $('.class')
+                selection d'un élément par lui-même : $(this)
+                selection d'un élément par sa balise et son type : $('input:text')
+                selection d'un élément par son type (tous les types radio) : $(':radio')
+                selection d'un élément par sa balise et son attribut : $('img[alt]')
+                selection d'un élément par son attribut : $('[alt]')
+                selection d'un élément par sa balise, son attribut ET sa valeur : $("img[title='paris']")
+                selection de plusieurs éléments différents en même temps : $("h1, p, #id")
+
+            */
         
     })
     </script>
