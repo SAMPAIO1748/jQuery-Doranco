@@ -118,7 +118,9 @@
             // -------------------------------- EVENEMENT MOUSEMOVE https://api.jquery.com/mousemove/
             // Lorsque nous allons bouger sur la zone 2, nous changerons leur contenu ave cla position de notre curseur dans la zone
             $(".zone2").on("mousemove", function(event){
-
+                    console.log(event);
+                    $(this).text("pageX : " + event.pageX + ", pageY : " + event.pageY);
+                    $("#info").text("Je suis sur la zone 2");
             })
         })
 
