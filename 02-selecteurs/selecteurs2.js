@@ -10,4 +10,13 @@ $(document).ready(function () {
   maSection.html("<h2>Bonjour à tous</h2>");
   // la fonction html() de jQuery est équivalent à innerHTML() en JavaScript, elle permet de remplacer ou de d'ajouter
   // du contenu html à l'élément sélectioné ainsi que de récupérer ce contenu pour l'afficher (par exemple).
+
+  // Exercice : selectionner les div qui ont la classe mesDivs
+  // appliquer le css :
+  /*
+        padding: 20px;
+        background : 'red';
+        margin-top: 10px;
+        color : 'navy';
+  */
 });
