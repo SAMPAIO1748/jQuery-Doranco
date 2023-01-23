@@ -188,6 +188,15 @@
                 document.getElementById("info").innerHTML = "Je clique droit sur la zone 9";
             })*/
 
+            // ------------------------------------------- EVENEMENT CONCERNANT LE CLAVIER
+
+            // ------------------------------------------- EVENEMENT BLUR https://api.jquery.com/blur/
+            // Lorsque nous allons cliquer ailleurs après avoir cliquer sur la zone 10 nous allons changer la background en rose.
+            $(".zone10").on('blur', function(){
+                $(this).css("background", "DeepPink");
+                $("#info").text("Je blur sur la zone 10");
+            })
+
         })
 
 
