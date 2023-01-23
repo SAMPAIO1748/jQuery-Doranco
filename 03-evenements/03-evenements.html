@@ -91,6 +91,38 @@
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script></script>
+    <script>
+
+        $(document).ready(function(){
+            console.log("jQuery est chargé");
+
+
+            // ------------------------------- EVENEMENT CONCERNANT LE DEPLACEMENT DE LA SOURIS
+
+            // -------------------------------- EVENEMENT MOUSEOVER https://api.jquery.com/mouseover/
+            // Lorsque que nous allons passer notre souris sur la zone 1 alorsnous changeons le backround en rouge.
+
+            $(".zone1").on("mouseover", function(){
+                $(this).css("background", "IndianRed");
+                $("#info").text("je suis sur la zone 1");
+            })
+
+            /*
+            Autre méthode
+            $(".zone1").mouseover(function(){
+                $(this).css("background", "IndianRed");
+                $("#info").text("je suis sur la zone 1");
+            })
+            */
+
+            // -------------------------------- EVENEMENT MOUSEMOVE https://api.jquery.com/mousemove/
+            // Lorsque nous allons bouger sur la zone 2, nous changerons leur contenu ave cla position de notre curseur dans la zone
+            $(".zone2").on("mousemove", function(event){
+
+            })
+        })
+
+
+    </script>
 </body>
 </html>
