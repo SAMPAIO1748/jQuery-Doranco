@@ -10,5 +10,33 @@
 		<h1> 2 - EXERCICE IMAGE : lorsque l'on doubleclic sur l'image, celle-ci doit prendre une taille de 70% ET LES H1 DOIVENT ÊTRE SUPPRIME ou DISPARAITRE </h1>
 		<br><br>
 		<img src="2.jpg" title="mon image" class="zone1" width="300">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+
+                $(".zone1").click(function(){
+                    if ($(this).attr("src") == "3.jpg") {
+                        $(this).attr("src", "2.jpg");
+                    }else{
+                        $(this).attr("src", "3.jpg");// this représente l'élément cliqué ici zone1
+                    // on change son attribut src.
+                    }
+                })
+
+                $(".zone1").dblclick(function(){
+                    if ($(this).width() == "300") {
+                        $(this).attr("width", "70%");
+                        $('h1').css("display", "none");
+                    }else{
+                        $(this).attr("width", "300");
+                        $('h1').css('display', "block");
+                    }
+        
+                })
+            })
+
+        </script>
     </body>
 </html>
