@@ -93,9 +93,28 @@
                 // Exercice 4
                 $(".zone5").click(function(event){
                     event.preventDefault();
-                    let maCouleur = $('.zone4').val();
+                    let maCouleur = $('.zone4').val(); // Récupération de la couleur sélectionner dans l'input zone4
                     console.log(maCouleur);
                     $("body").css("background", maCouleur);
+                })
+
+                // Exercice 5
+                $(".zone7").click(function(event){
+                    event.preventDefault();
+                    let maCouleur2 = $(".zone6").find("option:selected").text(); // Récupération de la valeur sélectionner dans le select
+                    console.log(maCouleur2);
+                    $("body").css("background", maCouleur2);
+                })
+
+                // Exercice 6
+                $(".zone8").click(function(){
+                    $(".zone8").css("background", "yellow");
+                })
+
+                // Exercice 7
+                $(".zone9").click(function(){
+                    $(".zone9").css("background", "yellow"); // on applique à toutes les zones 9
+                    $(this).css("background", "green"); // on applique à la zone9 sur laquelle on a cliqué.
                 })
             })
 
