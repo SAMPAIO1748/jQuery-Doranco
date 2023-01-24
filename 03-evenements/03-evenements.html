@@ -218,6 +218,15 @@
                 $("#info").text("Je relache une touche du clavier dans la zone 12");
             })
 
+
+            // ------------------------------------- EVENEMENT DIVERS ------------------------------------------------- //
+            // --------------------------------------- EVENEMENT SCROLL https://api.jquery.com/scroll/
+            // Lorsque l'on va scroller la page nous allons changer le background de la div qui a l'id info en vert.
+            $(window).scroll(function(){
+                $("#info").css("background", "SpringGreen");
+                $("#info").text("Je scrolle");
+            })
+
         })
 
 
