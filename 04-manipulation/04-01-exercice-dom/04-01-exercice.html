@@ -43,7 +43,7 @@
 					<option>MediumPurple</option>
 					<option>Ivory</option>
 					<option>Orange</option>
-				</option>
+                </select>
 				<input type="submit" class="zone7" value="Valider (zone7)">
 			</form>
 		</fieldset>
@@ -61,6 +61,45 @@
 			<div class="zone9">Zone 9</div>
 			<div class="zone9">Zone 9</div>
 		</fieldset>
+
+        <!-- event.preventDefault() pour stopper le comportement habituel d'un formulaire -->
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                console.log("document chargé");
+
+                // Exercice 1
+                $(".zone1").on("click", function(){
+                    $('h1').css({
+                        "text-align": "center",
+                        'font-size' : "80px",
+                        "color" : "green"
+                    })
+                })
+
+                // Exercice 2
+                $(".zone2").click(function(){
+                    $("body").css("background", "IndianRed");
+                })
+
+                // Exercice 3
+                $(".zone3").click(function(event){
+                    event.preventDefault() // permet de stoper le comportement par défaut du submit
+                    $('body').css("background", "LightGray");
+                })
+
+                // Exercice 4
+                $(".zone5").click(function(event){
+                    event.preventDefault();
+                    let maCouleur = $('.zone4').val();
+                    console.log(maCouleur);
+                    $("body").css("background", maCouleur);
+                })
+            })
+
+        </script>
     
     </body>
     </html>
