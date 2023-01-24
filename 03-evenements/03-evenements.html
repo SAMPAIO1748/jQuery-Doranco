@@ -204,6 +204,13 @@
                 $("#info").text("Je change l'option dans le select de la zone 11");
             })
 
+            // --------------------------------------- EVENEMENT KEYDOWN https://api.jquery.com/keydown/
+            // Lorsque nous allons appuyer sur une touche du clavier sur la zone 12 nous allons changer son background en cyan foncé.
+            $(".zone12").on("keydown", function(){
+                $(this).css("background", "darkCyan");
+                $("#info").text("J'appuie sur une touche du clavier dans la zone 12.");
+            })
+
         })
 
 
