@@ -29,6 +29,20 @@
 				<img src="9.jpg" title="mon image 9" alt="mon image" width="120">
 				<img src="10.jpg" title="mon image 10" alt="mon image" width="120">
 			</div>
-		</div>	
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+				$('.droite img').click(function(){
+					let monImage = $(this).attr('src'); // Recupération du src de mon image
+					let monTitre = $(this).attr('title'); // Récupartion du title de mon image
+					console.log(monImage);
+					$('.gauche img').attr('src', monImage); // changement de src 
+					$('.gauche img').attr('title', monTitre); // changement de title
+				})
+			})
+
+		</script>
 	</body>
 </html>
