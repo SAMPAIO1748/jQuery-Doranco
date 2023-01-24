@@ -211,6 +211,13 @@
                 $("#info").text("J'appuie sur une touche du clavier dans la zone 12.");
             })
 
+            // ---------------------------------------- EVENEMENT KEYUP https://api.jquery.com/keyup/
+            // Lorsque nous allons relacher une touche du clavier dans la zone 12 nous allons changer son background en bleu foncé.
+            $(".zone12").keyup(function(){
+                $(this).css("background", "navy");
+                $("#info").text("Je relache une touche du clavier dans la zone 12");
+            })
+
         })
 
 
